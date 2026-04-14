@@ -24,7 +24,7 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
 
-        kk_rct.move_ip((-1, 0))
+        kk_rct.move_ip((-1, 0)) # 演習１
         key_lst = pg.key.get_pressed()
         if key_lst[pg.K_UP]:
             kk_rct.move_ip((0, -1))
